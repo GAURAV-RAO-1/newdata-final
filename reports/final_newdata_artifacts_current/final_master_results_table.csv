@@ -9,3 +9,5 @@ SAR-SmallShip-YOLO-P2ECA curriculum,YOLOv8s + P2 + ECA,real_only -> combined_yol
 RT-DETR original-only,RT-DETR-L,real_only,0.634,0.698,0.643,Non-YOLO real-only baseline.
 RT-DETR Stage B-soft direct,RT-DETR-L,combined_yolo direct,0.645,0.674,0.625,Direct synthetic addition is mixed for RT-DETR.
 RT-DETR Stage B-soft curriculum,RT-DETR-L,real_only -> combined_yolo,0.748,0.770,0.726,Non-YOLO validation confirms curriculum gains.
+YOLO11s original-only,YOLO11s,real_only,0.919,0.920,0.883,Newer YOLO-family baseline.
+YOLO11s Stage B-soft curriculum,YOLO11s,real_only -> combined_yolo,0.949,0.951,0.916,Confirms Stage B-soft curriculum transfers to YOLO11s.

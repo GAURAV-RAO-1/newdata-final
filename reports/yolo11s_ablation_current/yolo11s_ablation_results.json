@@ -1,0 +1,62 @@
+[
+  {
+    "method": "YOLO11s original-only",
+    "training": "real_only",
+    "dataset": "combined_val",
+    "precision": 0.9928023055302981,
+    "recall": 0.988095150222033,
+    "map50": 0.9947689259963929,
+    "map50_95": 0.9193237173594145,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt"
+  },
+  {
+    "method": "YOLO11s original-only",
+    "training": "real_only",
+    "dataset": "hrsid_test",
+    "precision": 0.9894173626701058,
+    "recall": 0.9873140857392826,
+    "map50": 0.9945332716105215,
+    "map50_95": 0.9204696131834857,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt"
+  },
+  {
+    "method": "YOLO11s original-only",
+    "training": "real_only",
+    "dataset": "ssdd_test",
+    "precision": 0.992242560453683,
+    "recall": 0.9864423013642392,
+    "map50": 0.994424751932539,
+    "map50_95": 0.8828483242958125,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt"
+  },
+  {
+    "method": "YOLO11s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "combined_val",
+    "precision": 0.9955251980600401,
+    "recall": 0.9899368923759168,
+    "map50": 0.9948247243686491,
+    "map50_95": 0.9485944802484372,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "method": "YOLO11s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "hrsid_test",
+    "precision": 0.9875646865651818,
+    "recall": 0.9908136482939632,
+    "map50": 0.9947790403692766,
+    "map50_95": 0.9508051489148291,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "method": "YOLO11s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "ssdd_test",
+    "precision": 0.9948030249978329,
+    "recall": 0.9841635162977044,
+    "map50": 0.9947430426716141,
+    "map50_95": 0.9160219353133066,
+    "weights": "/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt"
+  }
+]

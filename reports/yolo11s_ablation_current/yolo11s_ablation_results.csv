@@ -1,0 +1,7 @@
+method,training,dataset,precision,recall,map50,map50_95,weights
+YOLO11s original-only,real_only,combined_val,0.9928023055302981,0.988095150222033,0.9947689259963929,0.9193237173594145,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt
+YOLO11s original-only,real_only,hrsid_test,0.9894173626701058,0.9873140857392826,0.9945332716105215,0.9204696131834857,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt
+YOLO11s original-only,real_only,ssdd_test,0.992242560453683,0.9864423013642392,0.994424751932539,0.8828483242958125,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_original_only/exp/weights/best.pt
+YOLO11s Stage B-soft curriculum,real_only -> combined_yolo,combined_val,0.9955251980600401,0.9899368923759168,0.9948247243686491,0.9485944802484372,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt
+YOLO11s Stage B-soft curriculum,real_only -> combined_yolo,hrsid_test,0.9875646865651818,0.9908136482939632,0.9947790403692766,0.9508051489148291,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt
+YOLO11s Stage B-soft curriculum,real_only -> combined_yolo,ssdd_test,0.9948030249978329,0.9841635162977044,0.9947430426716141,0.9160219353133066,/Users/gaurav/newdata/runs/yolo11s_ablation/yolo11s_stagebsoft_curriculum/exp/weights/best.pt
