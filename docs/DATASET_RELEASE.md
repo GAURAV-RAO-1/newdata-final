@@ -13,11 +13,17 @@ The heavy dataset archive is stored externally because GitHub is not suitable fo
 The release archive contains:
 
 - final detector-ready dataset
-- combined YOLO dataset
-- real-only split
-- synthetic-only split
+- `real_only` split
+- `combined_yolo` split
+- accepted Stage B-soft synthetic SR samples
 - final result tables
 - RT-DETR validation reports
+- YOLO11s ablation reports
 - YOLOv8s multi-seed stability reports
-- qualitative visual audit outputs
-- scripts and configs used in the project
+- SAR fidelity/statistical audit outputs
+- qualitative audit outputs
+- scripts and configurations used in the project
+
+## Important Note
+
+The dataset is derived from public SAR ship detection datasets and synthetic SR processing. Users must respect the licenses and usage terms of the original datasets. If redistribution is restricted by any upstream dataset license, users should regenerate the dataset using the provided scripts and source datasets instead of redistributing derived images.

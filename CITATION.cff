@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or dataset release, please cite this repository."
+title: "newdata-final: Detector-Aware Synthetic SAR Ship Detection Dataset"
+authors:
+  - family-names: "Yadav"
+    given-names: "Gaurav"
+version: "1.0.4"
+date-released: "2026-04-30"
+repository-code: "https://github.com/GAURAV-RAO-1/newdata-final"
+url: "https://github.com/GAURAV-RAO-1/newdata-final"
+keywords:
+  - SAR
+  - ship detection
+  - super-resolution
+  - synthetic data
+  - object detection
+  - YOLO
+  - RT-DETR
+license: "MIT"
