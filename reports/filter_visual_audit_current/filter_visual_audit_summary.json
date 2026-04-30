@@ -1,0 +1,10 @@
+{
+  "accepted_images_found": 15503,
+  "rejected_images_found": 0,
+  "accepted_panel": "/Users/gaurav/newdata/reports/filter_visual_audit_current/accepted_stagebsoft_examples.jpg",
+  "rejected_panel_created": false,
+  "rejected_panel": null,
+  "original_vs_sr_pair_panel_created": true,
+  "original_vs_sr_pair_panel": "/Users/gaurav/newdata/reports/filter_visual_audit_current/original_vs_accepted_sr_pairs.jpg",
+  "note": "If rejected_images_found is 0, rejected examples were not preserved under obvious rejected/fail folder names."
+}

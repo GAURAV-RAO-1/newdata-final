@@ -1,0 +1,29 @@
+# Large data and model files
+data/
+dataset/
+datasets/
+runs/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Caches and temp files
+*.cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Logs and local env
+logs/
+wandb/
+*.log
+.venv/
+venv/
+.env

@@ -1,0 +1,45 @@
+# SAR-SmallShip-YOLO-P2
+# YOLOv8s-style detector with an added P2 head for small SAR ship detection
+
+nc: 1
+
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [32, 3, 2]]      # 0-P1/2
+  - [-1, 1, Conv, [64, 3, 2]]      # 1-P2/4
+  - [-1, 1, C2f, [64, True]]       # 2
+  - [-1, 1, Conv, [128, 3, 2]]     # 3-P3/8
+  - [-1, 2, C2f, [128, True]]      # 4
+  - [-1, 1, Conv, [256, 3, 2]]     # 5-P4/16
+  - [-1, 2, C2f, [256, True]]      # 6
+  - [-1, 1, Conv, [512, 3, 2]]     # 7-P5/32
+  - [-1, 1, C2f, [512, True]]      # 8
+  - [-1, 1, SPPF, [512, 5]]        # 9
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, nearest]]
+  - [[-1, 6], 1, Concat, [1]]
+  - [-1, 1, C2f, [256]]            # 12-P4/16
+
+  - [-1, 1, nn.Upsample, [None, 2, nearest]]
+  - [[-1, 4], 1, Concat, [1]]
+  - [-1, 1, C2f, [128]]            # 15-P3/8
+
+  # Added P2 head
+  - [-1, 1, nn.Upsample, [None, 2, nearest]]
+  - [[-1, 2], 1, Concat, [1]]
+  - [-1, 1, C2f, [64]]             # 18-P2/4
+
+  - [-1, 1, Conv, [64, 3, 2]]
+  - [[-1, 15], 1, Concat, [1]]
+  - [-1, 1, C2f, [128]]            # 21-P3/8
+
+  - [-1, 1, Conv, [128, 3, 2]]
+  - [[-1, 12], 1, Concat, [1]]
+  - [-1, 1, C2f, [256]]            # 24-P4/16
+
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 9], 1, Concat, [1]]
+  - [-1, 1, C2f, [512]]            # 27-P5/32
+
+  - [[18, 21, 24, 27], 1, Detect, [nc]]

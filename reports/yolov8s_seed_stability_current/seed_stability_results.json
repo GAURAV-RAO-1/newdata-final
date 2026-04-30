@@ -1,0 +1,134 @@
+[
+  {
+    "seed": 1,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "combined_val",
+    "precision": 0.9926515322680871,
+    "recall": 0.9897663312297459,
+    "map50": 0.994837720813226,
+    "map50_95": 0.940665720006707,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 1,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "hrsid_test",
+    "precision": 0.9880394300187174,
+    "recall": 0.9864391951006124,
+    "map50": 0.9946053304456214,
+    "map50_95": 0.9396124708709926,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 1,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "ssdd_test",
+    "precision": 0.994565809362962,
+    "recall": 0.9845758354755784,
+    "map50": 0.9944314190666792,
+    "map50_95": 0.9102663351932865,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 1,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "combined_val",
+    "precision": 0.9928473151105666,
+    "recall": 0.9943579954476796,
+    "map50": 0.9949088500622809,
+    "map50_95": 0.9671376969871588,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "seed": 1,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "hrsid_test",
+    "precision": 0.9939776041549748,
+    "recall": 0.9886264216972879,
+    "map50": 0.9948082686328702,
+    "map50_95": 0.9681491676538396,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "seed": 1,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "ssdd_test",
+    "precision": 0.9963134819300792,
+    "recall": 0.9897172236503856,
+    "map50": 0.9949225468724961,
+    "map50_95": 0.9426072182910465,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed1_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "combined_val",
+    "precision": 0.9948720161882868,
+    "recall": 0.9902780146682586,
+    "map50": 0.994871120013681,
+    "map50_95": 0.9364176424824237,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "hrsid_test",
+    "precision": 0.9864999567578933,
+    "recall": 0.9909400833253497,
+    "map50": 0.9946615855352713,
+    "map50_95": 0.9394285482822158,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s original-only",
+    "training": "real_only",
+    "dataset": "ssdd_test",
+    "precision": 0.9963015717884226,
+    "recall": 0.9845758354755784,
+    "map50": 0.994536537648054,
+    "map50_95": 0.9018557751150537,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_original_only/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "combined_val",
+    "precision": 0.9928149511207744,
+    "recall": 0.9942009210301893,
+    "map50": 0.994889430640044,
+    "map50_95": 0.9654646994432394,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "hrsid_test",
+    "precision": 0.9938370152259725,
+    "recall": 0.9875882235230796,
+    "map50": 0.9947514463117851,
+    "map50_95": 0.9655952627629102,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_stagebsoft_curriculum/exp/weights/best.pt"
+  },
+  {
+    "seed": 2,
+    "method": "YOLOv8s Stage B-soft curriculum",
+    "training": "real_only -> combined_yolo",
+    "dataset": "ssdd_test",
+    "precision": 0.9841082563031802,
+    "recall": 0.9922879177377892,
+    "map50": 0.9946645780552904,
+    "map50_95": 0.9377039560258045,
+    "weights": "/Users/gaurav/newdata/runs/yolov8s_seed_stability/seed2_stagebsoft_curriculum/exp/weights/best.pt"
+  }
+]

@@ -1,0 +1,11 @@
+Method,Detector,Training,Combined val mAP50-95,HRSID test mAP50-95,SSDD test mAP50-95,Note
+Original-only YOLOv8s,YOLOv8s,real_only,0.935,0.935,0.894,Real-only YOLO baseline.
+Stage A SR YOLOv8s,YOLOv8s,Original + Stage A accepted SR,0.941,0.946,0.906,Basic SR filtering gives small gains.
+Stage B-soft YOLOv8s direct,YOLOv8s,combined_yolo direct,0.959,0.959,0.942,Direct Stage B-soft synthetic addition.
+Stage B-soft + curriculum YOLOv8s,YOLOv8s,real_only -> combined_yolo,0.966,0.967,0.954,Best YOLOv8s cross-dataset robustness.
+SAR-SmallShip-YOLO-P2 direct,YOLOv8s + P2,combined_yolo direct,0.959,0.959,0.930,P2 direct architectural ablation.
+SAR-SmallShip-YOLO-P2 curriculum,YOLOv8s + P2,real_only -> combined_yolo,0.968,0.968,0.946,Best combined/HRSID result.
+SAR-SmallShip-YOLO-P2ECA curriculum,YOLOv8s + P2 + ECA,real_only -> combined_yolo,0.966,0.967,0.951,ECA improves SSDD over P2.
+RT-DETR original-only,RT-DETR-L,real_only,0.634,0.698,0.643,Non-YOLO real-only baseline.
+RT-DETR Stage B-soft direct,RT-DETR-L,combined_yolo direct,0.645,0.674,0.625,Direct synthetic addition is mixed for RT-DETR.
+RT-DETR Stage B-soft curriculum,RT-DETR-L,real_only -> combined_yolo,0.748,0.770,0.726,Non-YOLO validation confirms curriculum gains.
