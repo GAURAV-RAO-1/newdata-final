@@ -1,6 +1,6 @@
 # newdata-final: Detector-Aware Synthetic SAR Ship Detection Dataset
 
-This repository contains the code, configuration files, and result tables for newdata-final, a detector-aware synthetic SAR ship detection dataset pipeline.
+This repository contains the code, configuration files, and result tables for `newdata-final`, a detector-aware synthetic SAR ship detection dataset pipeline.
 
 ## Overview
 
@@ -8,8 +8,8 @@ The project builds a SAR ship detection benchmark by combining original SAR ship
 
 The strongest training setting is curriculum learning:
 
-- Stage 1: train on real_only
-- Stage 2: continue training on combined_yolo
+- Stage 1: train on `real_only`
+- Stage 2: continue training on `combined_yolo`
 
 ## Main Contributions
 
@@ -50,20 +50,12 @@ Extra seeds 1 and 2 confirm stable improvement.
 
 ## Repository Structure
 
-src/
-- sr_realesrgan/
-- non_yolo/
-- seed_stability/
-- finalize/
-
-configs/
-- custom YOLO configs
-
-reports/
-- final result tables
-- RT-DETR validation tables
-- multi-seed stability results
-- qualitative audit outputs
+- `src/sr_realesrgan/` - Real-ESRGAN SR generation, filtering, YOLO training, and custom detector scripts.
+- `src/non_yolo/` - RT-DETR training and evaluation scripts.
+- `src/seed_stability/` - YOLOv8s multi-seed stability script.
+- `src/finalize/` - final artifact freezing and table-building script.
+- `configs/` - custom YOLO P2 and P2ECA configs.
+- `reports/` - final result tables, RT-DETR validation, multi-seed results, and qualitative audit outputs.
 
 ## Dataset Access
 
@@ -71,29 +63,29 @@ The full dataset and trained weights are not stored in this GitHub repository be
 
 Dataset release package:
 
-release_dataset_newdata_final_v1.tar.gz
+`release_dataset_newdata_final_v1.tar.gz`
 
 SHA256:
 
-7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8
+`7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8`
 
 Dataset access link:
 
-Add Google Drive / Zenodo link here
+Google Drive: https://drive.google.com/drive/folders/11uX0ZFEIOKeEqdOmo-dobozEsPh3fvtk
 
 ## Training Example
 
-yolo detect train model=yolov8s.pt data=path/to/combined_yolo/dataset.yaml imgsz=128 epochs=20 batch=16
+`yolo detect train model=yolov8s.pt data=path/to/combined_yolo/dataset.yaml imgsz=128 epochs=20 batch=16`
 
 ## Evaluation Example
 
-yolo detect val model=path/to/best.pt data=path/to/dataset.yaml imgsz=128 conf=0.001 iou=0.7
+`yolo detect val model=path/to/best.pt data=path/to/dataset.yaml imgsz=128 conf=0.001 iou=0.7`
 
 ## Important Interpretation
 
 This project does not claim that synthetic data always improves every detector directly. The strongest conclusion is:
 
-Detector-aware Stage B-soft synthetic SR data improves SAR ship detection generalization most consistently when introduced through real-only to combined curriculum training.
+> Detector-aware Stage B-soft synthetic SR data improves SAR ship detection generalization most consistently when introduced through real-only to combined curriculum training.
 
 ## License Notice
 

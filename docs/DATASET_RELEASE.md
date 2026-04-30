@@ -6,11 +6,11 @@ The heavy dataset archive is stored externally because GitHub is not suitable fo
 
 File name:
 
-release_dataset_newdata_final_v1.tar.gz
+`release_dataset_newdata_final_v1.tar.gz`
 
 SHA256:
 
-7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8
+`7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8`
 
 ## Contents
 
@@ -28,4 +28,4 @@ The release archive contains:
 
 ## Dataset Link
 
-Add Google Drive / Zenodo link here after final sharing.
+Google Drive: https://drive.google.com/drive/folders/11uX0ZFEIOKeEqdOmo-dobozEsPh3fvtk
