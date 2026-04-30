@@ -48,6 +48,14 @@ Extra seeds 1 and 2 confirm stable improvement.
 | Original-only YOLOv8s | 0.939 | 0.940 | 0.906 |
 | Stage B-soft curriculum YOLOv8s | 0.966 | 0.967 | 0.940 |
 
+## Dataset Access
+
+The full dataset and trained weights are stored externally because they are large binary artifacts.
+
+- Dataset archive: `release_dataset_newdata_final_v1.tar.gz`
+- SHA256: `7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8`
+- Google Drive: https://drive.google.com/drive/folders/11uX0ZFEIOKeEqdOmo-dobozEsPh3fvtk
+
 ## Repository Structure
 
 - `src/sr_realesrgan/` - Real-ESRGAN SR generation, filtering, YOLO training, and custom detector scripts.
@@ -56,22 +64,6 @@ Extra seeds 1 and 2 confirm stable improvement.
 - `src/finalize/` - final artifact freezing and table-building script.
 - `configs/` - custom YOLO P2 and P2ECA configs.
 - `reports/` - final result tables, RT-DETR validation, multi-seed results, and qualitative audit outputs.
-
-## Dataset Access
-
-The full dataset and trained weights are not stored in this GitHub repository because they are large binary artifacts.
-
-Dataset release package:
-
-`release_dataset_newdata_final_v1.tar.gz`
-
-SHA256:
-
-`7060499f2f24cf0fa9c98f42d024e983bd275d68ec52c2412011bebccbef8dd8`
-
-Dataset access link:
-
-Google Drive: https://drive.google.com/drive/folders/11uX0ZFEIOKeEqdOmo-dobozEsPh3fvtk
 
 ## Training Example
 
